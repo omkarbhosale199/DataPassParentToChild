@@ -1,0 +1,49 @@
+<div><p><strong>@Input decorator are use to pass data parent1 to child1</strong></p>
+
+  <app-child1 [child1Message]="sendDataToChild1"></app-child1>
+
+  <!-- <br>
+  <p> One whose component is the selector of the other becomes the child</p>
+  <p>जिस कंपोनेंट का सिलेक्ट रेफरेंस हम अगर किसी कंपोनेंट को देते हैं ,जिसे देते हैं सिलेक्ट रेफरेंस वह कहलाता है पैरेंट और जो जहां से लेते प सिलेक्ट रेफरेंस उसे कहते हैं हम चाइल्ड</p>
+  <p><strong><i>so here parent1 is parent and child1 is child</i></strong></p>
+</div>
+
+<div><p><b>IMP-</b></p>
+  <p>हमें data पास करना है चाइल्ड तू पैरेंट OR पैरेंट टू चाइल्ड इस केस में हमें @ इनपुट डेकोरेटर और @ आउटपुट डेकोरेटर हमें चाइल्ड कॉम्पोनेंट में ही मेंशन करना होगा |</p>
+  </div>
+<hr>
+<div>
+  <p>app-child1 [property]->>>> child1Message    ="property"->>>> sendDataToChild1>    /app-child1></p>
+    <div><p>
+      app-child1 [property]->>>> child1Message(child property)    ="property"(parent property)   ->>>> sendDataToChild1>   /app-child1>
+    </p></div>
+  <p>using property binding</p>
+</div>
+<hr>
+<p>on browser console then we get data (ctrl + shift + c ) or implement string interpolation</p>
+<hr> -->
+<!-- step 3 -->
+
+
+
+<!-- <div>
+  <p><b>
+    //step 1 (parent component ts file)
+  sendDataToChild1 : (any)= "Go and Study Hard And get Job.(Data come from parent1 to child1)"
+
+  // step 2 (child component ts file)
+  @Input() child1Message:any;
+
+  // step 3 (parent component html file)
+ app-child1 [child1Message]="sendDataToChild1">  /app-child1>
+
+// step 4 (child component ts file)
+  ngOnInit(): void {
+    console.log("access in  ngOnInit()",this.child1Message);
+  }
+or sting interpolation
+
+  </b></p>
+</div> -->
+
+

@@ -1,0 +1,52 @@
+<p> <strong><i>data pass parent2 to child2</i></strong></p>
+<div class="container">
+
+ <b>
+  <p>{{sendDataToChild21}}</p>
+  <p>{{sendDataToChild22}}</p>
+  <p>{{sendDataToChild23}}</p>
+  <p>{{sendDataToChild24}}</p>
+</b>
+</div>
+
+<app-child2 [receiveMassage1]="sendDataToChild21" [receiveMassage2]="sendDataToChild22" [receiveMassage3]="sendDataToChild23"  [receiveMassage4]="sendDataToChild24"></app-child2>
+
+<!--
+
+`
+  //step 1 (parent component ts file)
+
+ sendDataToChild21="First massage from parent2";
+    sendDataToChild22="second massage from parent2 to child2 ";
+    sendDataToChild23="third massage from parent2 to child2";
+    sendDataToChild24=...........All Steps..............
+
+
+  // step 2 (child component ts file)
+
+    @Input() receiveMassage1 :any;
+    @Input() receiveMassage2 :any;
+    @Input() receiveMassage3 :any;
+    @Input() receiveMassage4 :any;
+
+  // step 3 (parent component html file)
+
+  {{sendDataToChild21}}
+ {{sendDataToChild22}}
+  {{sendDataToChild2}}
+  {{sendDataToChild24}}---- >>> string interpolation
+  app-child2 [receiveMassage1]="sendDataToChild21" [receiveMassage2]="sendDataToChild22" [receiveMassage3]="sendDataToChild23"  [receiveMassage4]="sendDataToChild24"> /app-child2</>
+//             child property = parent property      child property = parent property       child property = parent property      child property = parent property
+
+// step 4 (parent component 1ts file)
+
+  console.log(sendDataToChild21--- ->>> ${this.sendDataToChild21}
+                sendDataToChild22--- ->>> ${this.sendDataToChild22}
+                sendDataToChild23--- ->>> ${this.sendDataToChild23}
+                sendDataToChild24--- ->>> ${this.sendDataToChild24} )`
+
+ -->
+
+
+
+
